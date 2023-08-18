@@ -1,4 +1,4 @@
-@font-face {font-family:'gaesung'; src:url(../font/gaesung.ttf);}
+body, html {scroll-behavior:smooth;}
 /* 반응형 대비 최소제한 너비 설정 */
 header, main {min-width:1000px;}
 /* header */
