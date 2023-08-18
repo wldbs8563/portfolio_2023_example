@@ -1,0 +1,166 @@
+@font-face {font-family:'gaesung'; src:url(../font/gaesung.ttf);}
+/* 반응형 대비 최소제한 너비 설정 */
+header, main {min-width:1000px;}
+/* header */
+header {
+    position:fixed; left:0; top:0; width:100%; z-index:999;
+    padding:35px 30px 0 30px;
+}
+header nav {
+    border-top:1px solid #000;
+    border-bottom:3px solid #000;
+    display:flex; justify-content:space-between;
+}
+header nav .gnb {}
+header nav .gnb a {
+    margin-right:30px; font-weight:600;
+    transition:all 1s; display:inline-block; padding:15px 20px;
+}
+header nav .gnb a:hover {
+    
+}
+header nav .gnb a:last-child{margin-right:0;}
+header nav .sns {}
+header nav .sns span {
+    font-weight:600; padding:15px 0; display:inline-block;
+}
+/* #home */
+main {}
+main > * {padding:0 30px;}
+main #home {
+    height:100vh; text-align:center;
+}
+main #home h1 {padding-top:250px;}
+main #home h1 img {}
+main #home .mouse {
+    position:absolute; left:50%; bottom:50px;
+    transform:translateX(-50%);
+}
+main #home .mouse img {animation:mouse_move 1s linear alternate infinite;}
+@keyframes mouse_move {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-20px)}
+}
+/* skills */
+main #skill {background:#fff; padding-top:100px; padding-bottom:100px;}
+main #skill h1 {font-size:2.5rem; font-weight:700;}
+main #skill .container {
+    height:900px;
+    /* 스킬 9개 수직 줄바꿈으로 배치하는 flex */
+    display:flex; flex-flow:column wrap;
+    margin-top:50px; align-content:space-between;
+}
+main #skill .container li {
+    width:48%; padding-top:50px;
+    padding-bottom:50px; border-bottom:1px dashed #aaa;
+    /* 아이콘, 글자 옆으로 배치하는 flex */
+    display:flex; flex-flow:row nowrap;
+}
+main #skill .container li:first-child {padding-top:0;}
+main #skill .container li:nth-child(6) {padding-top:0;}
+main #skill .container li span {letter-spacing:-0.02em; font-weight:500; font-family: 'Noto Sans KR', sans-serif;}
+main #skill .container li .icon {width:70px;}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width:calc(100% - 70px); font-weight:700;
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:40px;
+}
+/* #profile */
+main #profile {}
+main #profile h1 {
+    font-size:4rem; text-align:center;
+    padding:100px 0;
+}
+main #profile h1 span {
+    font-size:3rem;
+}
+main #profile h1 em {
+    font-size:4rem; color:#8677A7;
+}
+main #profile .container {
+    display:flex; justify-content:center;
+    align-items:center;
+    padding-bottom:100px;
+}
+main #profile .container .photo {width:300px;}
+main #profile .container .photo img {}
+main #profile .container .info {
+    width:50%; margin-left:50px;
+}
+main #profile .container .info h2 {
+    margin-bottom:36px; font-size:2rem;
+}
+main #profile .container .info dl {display:flex; flex-flow:row wrap;}
+main #profile .container .info dl > * {line-height:50px; border-bottom:1px dashed #ccc;}
+main #profile .container .info dl dt {width:160px;}
+main #profile .container .info dl dd {width:calc(100% - 160px);}
+/* project_web1 */
+main #project_web1 {margin-bottom:100px;}
+main #project_web1 .preview {
+    position:relative;
+}
+main #project_web1 .preview img {
+    width:100%;
+}
+main #project_web1 .preview h1 {
+    position:absolute; z-index:999;
+    left:50%; top:40px; transform:translateX(-50%);
+    font-size:3rem;
+}
+main #project_web1 .bottom {
+    display:flex; justify-content:space-between;
+    align-items: center;
+}
+main #project_web1 .bottom .project_info {}
+main #project_web1 .bottom .project_info p {
+    font-size:2rem; line-height:60px;
+    letter-spacing:-0.02em;
+}
+main #project_web1 .bottom .link {
+    display:flex;
+    flex-flow:column nowrap;
+}
+main #project_web1 .bottom .link a {
+    font-size:2rem; text-align:center;
+    background:#222; padding:15px;
+    color:#fff; border-radius:20px; display:inline-block;
+}
+main #project_web1 .bottom .link a:nth-child(2) {margin:15px 0;}
+main #project_web1 .bottom .link a:hover {
+    background:#5F524C;
+}
+/* project_web2 */
+main #project_web2 {margin-bottom:100px;}
+main #project_web2 .preview {
+    position:relative;
+}
+main #project_web2 .preview img {
+    width:100%;
+}
+main #project_web2 .preview h1 {
+    position:absolute; z-index:999;
+    left:50%; top:40px; transform:translateX(-50%);
+    font-size:3rem;
+}
+main #project_web2 .bottom {
+    display:flex; justify-content:space-between;
+    align-items: center;
+}
+main #project_web2 .bottom .project_info {}
+main #project_web2 .bottom .project_info p {
+    font-size:2rem; line-height:60px;
+    letter-spacing:-0.02em;
+}
+main #project_web2 .bottom .link {
+    display:flex;
+    flex-flow:column nowrap;
+}
+main #project_web2 .bottom .link a {
+    font-size:2rem; text-align:center;
+    background:#222; padding:15px;
+    color:#fff; border-radius:20px; display:inline-block;
+}
+main #project_web2 .bottom .link a:nth-child(2) {margin:15px 0;}
+main #project_web2 .bottom .link a:hover {
+    background:#FFA800;
+}

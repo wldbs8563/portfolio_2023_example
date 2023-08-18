@@ -1,0 +1,23 @@
+@media screen and (max-width:1450px){
+    main #skill .container {height:900px}
+    main #skill .container li {width:49%;}
+    main #project_web1 .preview h1,
+    main #project_web2 .preview h1 {font-size:2rem;}
+    main #project_web1 .bottom .project_info p,
+    main #project_web2 .bottom .project_info p {font-size:1.5rem; line-height:50px;  padding:10px;}
+    main #project_web1 .bottom .link a,
+    main #project_web2 .bottom .link a {font-size:1.5rem; padding:10px; border-radius:15px;}
+}
+@media screen and (max-width:1400px){
+    main #skill .container {height:1000px}
+    main #skill .container li {width:49%;}
+}
+@media screen and (max-width:1200px){
+    main #skill .container {height:1200px}
+    main #project_web1 .preview h1,
+    main #project_web2 .preview h1 {top:20px;}
+    main #project_web1 .bottom .project_info p,
+    main #project_web2 .bottom .project_info p {font-size:1rem;  padding:5px; line-height:40px;}
+    main #project_web1 .bottom .link a,
+    main #project_web2 .bottom .link a {font-size:1rem;  padding:10px; border-radius:10px;}
+}
